@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-monitor" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 68e9e1305f2792f865188de916c6ab987af9316ae5e9ec612c1bf28f43f6129c
-  
+  sha256: d57d604cc1a7a9ce35eb7cf8a00d4924887c688aa78dc035ea1f80066b297464
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'Microsoft Azure Monitor Client Library for Python.'
+  summary: Microsoft Azure Monitor Client Library for Python.
 
 
 extra:
