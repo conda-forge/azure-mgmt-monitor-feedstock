@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-monitor" %}
-{% set version = "0.11.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: c6e1fe83dd2ddffa7f6d90c7aa63b3128042396a3893c14dc4816ad28cb15016
+  sha256: 91ddb7333bf2b9541a53864cc8d2501e3694a03a9c0e41cbfae3348558675ce6
 
 build:
   noarch: python
