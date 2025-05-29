@@ -32,14 +32,14 @@ Current release info
 Installing azure-mgmt-monitor
 =============================
 
-Installing `azure-mgmt-monitor` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `azure-mgmt-monitor` from the `conda-forge/label/azure-mgmt-monitor_rc` channel can be achieved by adding `conda-forge/label/azure-mgmt-monitor_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/azure-mgmt-monitor_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `azure-mgmt-monitor` can be installed with `conda`:
+Once the `conda-forge/label/azure-mgmt-monitor_rc` channel has been enabled, `azure-mgmt-monitor` can be installed with `conda`:
 
 ```
 conda install azure-mgmt-monitor
@@ -54,26 +54,26 @@ mamba install azure-mgmt-monitor
 It is possible to list all of the versions of `azure-mgmt-monitor` available on your platform with `conda`:
 
 ```
-conda search azure-mgmt-monitor --channel conda-forge
+conda search azure-mgmt-monitor --channel conda-forge/label/azure-mgmt-monitor_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search azure-mgmt-monitor --channel conda-forge
+mamba search azure-mgmt-monitor --channel conda-forge/label/azure-mgmt-monitor_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search azure-mgmt-monitor --channel conda-forge
+mamba repoquery search azure-mgmt-monitor --channel conda-forge/label/azure-mgmt-monitor_rc
 
 # List packages depending on `azure-mgmt-monitor`:
-mamba repoquery whoneeds azure-mgmt-monitor --channel conda-forge
+mamba repoquery whoneeds azure-mgmt-monitor --channel conda-forge/label/azure-mgmt-monitor_rc
 
 # List dependencies of `azure-mgmt-monitor`:
-mamba repoquery depends azure-mgmt-monitor --channel conda-forge
+mamba repoquery depends azure-mgmt-monitor --channel conda-forge/label/azure-mgmt-monitor_rc
 ```
 
 
